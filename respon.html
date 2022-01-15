@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+   <style>
+       *{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.side{
+    float:left;
+    width: 40%;
+    height: 300px;
+    background-color: tomato;
+}
+
+.content{
+    float: left;
+    width:60%;
+    background-color: yellow;
+    padding: 20px;
+    height: 300px;
+}
+
+ul{
+  padding: 30px;
+}
+
+@media only screen and (max-width:500px){
+    .side{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>Communicating Channels</p>
+    </div>
+    <div style="overflow:auto">
+        <div class="side">
+            <ul style="list-style-type: none;list-style-position: inside;">
+                <li>abc</li>
+                <li>def</li>
+                <li>ghj</li>
+                <li>dhbdh</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h3>Content</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti hic id dolores labore enim, alias nobis harum consequatur dicta, asperiores rerum aliquid accusamus iste minima rem, deserunt aperiam possimus?</p>
+            <input type="color" id="color" oninput="myColor()" value="#811818">
+            <p id="codeVal">Code Value</p>
+        </div>
+    </div>
+    <script>
+        const myColor = () =>{
+            let val = document.getElementById("color").value;
+            document.getElementById("codeVal").innerHTML = val;
+            // console.log(val);
+        }
+    </script>
+</body>
+</html>

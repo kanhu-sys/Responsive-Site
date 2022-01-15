@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: aqua;
+    padding: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.aside > div{
+    /* float:left; */
+    left: 50%;
+    /* overflow: hidden; */
+    /* padding: 0px; */
+    background-color: tomato;
+}
+
+/* .main{
+    background-color: yellowgreen;
+} */
+
+/* ul > li{
+    list-style-type: none;
+    padding-left: none;
+    text-align: left;
+    padding-top: 10px;
+} */
+
+.content{
+    /* float: left; */
+    width:80%;
+    /* padding: 20px; */
+    /* height: 250px; */
+    background-color: yellow;
+    /* display: block; */
+}
+
